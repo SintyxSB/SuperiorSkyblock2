@@ -287,7 +287,6 @@ public class WorldRecordServiceImpl implements WorldRecordService, IService {
             return RecordResult.NOT_IN_ISLAND;
 
         island.getEntitiesTracker().trackEntity(Keys.of(entityType), 1);
-        // TODO: elsewhere
         IslandsDatabaseBridge.saveEntityCounts(island);
 
 
@@ -338,7 +337,6 @@ public class WorldRecordServiceImpl implements WorldRecordService, IService {
             return RecordResult.NOT_IN_ISLAND;
 
         island.getEntitiesTracker().untrackEntity(Keys.of(entityType), 1);
-        // TODO: not here
         IslandsDatabaseBridge.saveEntityCounts(island);
 
         return RecordResult.SUCCESS;

@@ -122,7 +122,6 @@ public class BukkitEntities {
     }
 
     public static Key getLimitEntityType(Entity entity) {
-        // TODO - Is this really necessary?
         return Keys.of(entity.getType());
     }
 
